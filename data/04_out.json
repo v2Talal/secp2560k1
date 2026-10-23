@@ -1,0 +1,90 @@
+{
+  "invariants": {
+    "p": "115792089237316195423570985008687907853269984665640564039457584007908834671663",
+    "n": "115792089237316195423570985008687907852837564279074904382605163141518161494337",
+    "t": "432420386565659656852420866390673177327",
+    "hasse_lo": "115792089237316195423570985008687907852589419931798687112530834793045298248751",
+    "hasse_hi": "115792089237316195423570985008687907853950549399482440966384333222772371094577",
+    "cofactor": 1
+  },
+  "curve_type": {
+    "p_mod_3": 1,
+    "p_mod_4": 3,
+    "p_mod_9": 7,
+    "ordinary": true,
+    "anomalous": false
+  },
+  "torsion": {
+    "rational_2_torsion": false,
+    "rational_3_torsion_on_E": false,
+    "rational_3_torsion_on_twist": true,
+    "twist_b": "189",
+    "twist_order3_point": [
+      "53752591420737253357354794335102420694228939304826821434373703395273947362954",
+      "4493909480752583470388510762277414377645945826401242149811611763934332091089"
+    ]
+  },
+  "embedding_degree": {
+    "brute_force_bound": 1000000,
+    "smallest_k_found": null,
+    "n_minus_1_small_factors": {
+      "2": 6,
+      "3": 1,
+      "149": 1,
+      "631": 1
+    },
+    "n_minus_1_cofactor": "6414488540731361226607730496888035255996436684289152125202372832747357",
+    "n_minus_1_cofactor_is_prime": false,
+    "exact_order": null,
+    "mov": "BLOCKED (embedding degree >> 4)"
+  },
+  "sextic_class": {
+    "7": {
+      "trace": "432420386565659656852420866390673177327",
+      "order": "115792089237316195423570985008687907852837564279074904382605163141518161494337"
+    },
+    "21": {
+      "trace": "671331852483699643819086596696745227420",
+      "order": "115792089237316195423570985008687907852598652813156864395638497411212089444244"
+    },
+    "63": {
+      "trace": "238911465918039986966665730306072050093",
+      "order": "115792089237316195423570985008687907853031073199722524052490918277602762621571"
+    },
+    "189": {
+      "trace": "-432420386565659656852420866390673177327",
+      "order": "115792089237316195423570985008687907853702405052206223696310004874299507848991"
+    },
+    "567": {
+      "trace": "-671331852483699643819086596696745227420",
+      "order": "115792089237316195423570985008687907853941316518124263683276670604605579899084"
+    },
+    "1701": {
+      "trace": "-238911465918039986966665730306072050093",
+      "order": "115792089237316195423570985008687907853508896131558604026424249738214906721757"
+    }
+  },
+  "isogeny_link": {
+    "trace_E_mod3": 1,
+    "trace_twist_mod3": 2,
+    "gcd_orders": "1",
+    "E_and_twist_3_isogenous": false
+  },
+  "descending_3_isogeny": {
+    "isogeny_image_on_curve": true,
+    "legendre_7_mod_p": -1,
+    "kernel_rational_over_Fp": false
+  },
+  "verdicts": {
+    "Pollard rho (generic DLP)": "GENERIC COST ~ sqrt(n) = 2^128; CM gives NO speedup because phi is public scalar multiplication by lambda",
+    "MOV / Frey-Ruck (small embedding degree)": "BLOCKED (ord_n(p) > 10^6)",
+    "Weil descent / GHS (3-descent)": "BLOCKED for E: no rational 3-torsion, all 3-isogenies in E's class are descending, traces differ mod 3; NOT blocked for the quadratic twist E' (which has rational 3-torsion)",
+    "Smart / anomalous (n = p)": "N/A (n != p)",
+    "Supersingular (p = 2,3 mod 4 + #E = p+1)": "N/A (curve is ordinary)",
+    "Pohlig-Hellman (smooth order)": "N/A (n is prime)",
+    "Koblitz/Mestre 2-dimensional lattice attack": "NOT APPLICABLE: the CM endomorphism is public (phi = multiplication by a public lambda), so it yields no advantage over generic Pollard rho",
+    "Tate pairing / MOV on twist": "BLOCKED (same embedding degree)",
+    "Endormorphism-assisted DLP": "NO advantage (public lambda); only the constant-factor GLV arithmetic win"
+  },
+  "runtime_sec": 0.91
+}

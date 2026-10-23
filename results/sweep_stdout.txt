@@ -1,0 +1,75 @@
+==========================================================================
+CLASS-AWARE MINIMALITY SEARCH  n = 2560  s = 320  c = 132200237  (j = 0..11016686, 11016687 candidates)
+started 2026-10-22 15:47:29
+python 3.13.15, numpy 2.5.3, gmpy2 2.3.2, workers 14
+  sieve over 1270605 primes <= 20000000
+    sieved 300000/1270605 (1.2s)
+    sieved 600000/1270605 (2.0s)
+    sieved 900000/1270605 (2.8s)
+    sieved 1200000/1270605 (3.7s)
+  sieve done in 3.9s: 1102457 survivors of 11016687 (10.0072%)
+  chunk 1: 100000/1102457 survivors, 1657 prime p (120.3s)
+    recipe hit: j = 39213     c = 470561      prime order bits 2561
+    recipe hit: j = 115032    c = 1380389     prime order bits 2561
+    recipe hit: j = 163718    c = 1964621     prime order bits 2561
+    recipe hit: j = 349352    c = 4192229     prime order bits 2560
+    recipe hit: j = 641797    c = 7701569     prime order bits 2561
+    recipe hit: j = 857693    c = 10292321    prime order bits 2560
+    recipe hit: j = 876873    c = 10522481    prime order bits 2560
+    recipe hit: j = 881063    c = 10572761    prime order bits 2560
+    recipe hit: j = 964762    c = 11577149    prime order bits 2561
+  chunk 2: 200000/1102457 survivors, 1737 prime p (257.9s)
+    recipe hit: j = 1043384   c = 12520613    prime order bits 2560
+    recipe hit: j = 1255857   c = 15070289    prime order bits 2560
+    recipe hit: j = 1671783   c = 20061401    prime order bits 2560
+    recipe hit: j = 1840606   c = 22087277    prime order bits 2561
+  chunk 3: 300000/1102457 survivors, 1678 prime p (395.1s)
+    recipe hit: j = 2100144   c = 25201733    prime order bits 2560
+    recipe hit: j = 2321632   c = 27859589    prime order bits 2561
+    recipe hit: j = 2712413   c = 32548961    prime order bits 2560
+    recipe hit: j = 2805427   c = 33665129    prime order bits 2560
+    recipe hit: j = 2815832   c = 33789989    prime order bits 2560
+    recipe hit: j = 2915026   c = 34980317    prime order bits 2560
+  chunk 4: 400000/1102457 survivors, 1675 prime p (532.2s)
+    recipe hit: j = 3236059   c = 38832713    prime order bits 2561
+    recipe hit: j = 3520162   c = 42241949    prime order bits 2560
+    recipe hit: j = 3803549   c = 45642593    prime order bits 2560
+  chunk 5: 500000/1102457 survivors, 1685 prime p (669.2s)
+    recipe hit: j = 4249431   c = 50993177    prime order bits 2561
+    recipe hit: j = 4356277   c = 52275329    prime order bits 2561
+  chunk 6: 600000/1102457 survivors, 1687 prime p (806.2s)
+    recipe hit: j = 5096766   c = 61161197    prime order bits 2561
+    recipe hit: j = 5487381   c = 65848577    prime order bits 2561
+    recipe hit: j = 5681408   c = 68176901    prime order bits 2561
+    recipe hit: j = 5942973   c = 71315681    prime order bits 2560
+  chunk 7: 700000/1102457 survivors, 1698 prime p (943.7s)
+    recipe hit: j = 6056026   c = 72672317    prime order bits 2561
+    recipe hit: j = 6535883   c = 78430601    prime order bits 2561
+    recipe hit: j = 6723579   c = 80682953    prime order bits 2560
+    recipe hit: j = 6775369   c = 81304433    prime order bits 2560
+  chunk 8: 800000/1102457 survivors, 1702 prime p (1085.1s)
+    recipe hit: j = 7163054   c = 85956653    prime order bits 2561
+    recipe hit: j = 7300229   c = 87602753    prime order bits 2560
+  chunk 9: 900000/1102457 survivors, 1681 prime p (1224.3s)
+    recipe hit: j = 8130921   c = 97571057    prime order bits 2561
+    recipe hit: j = 8643196   c = 103718357   prime order bits 2560
+    recipe hit: j = 8667474   c = 104009693   prime order bits 2561
+  chunk 10: 1000000/1102457 survivors, 1686 prime p (1361.9s)
+    recipe hit: j = 9172127   c = 110065529   prime order bits 2560
+    recipe hit: j = 9216117   c = 110593409   prime order bits 2560
+    recipe hit: j = 9224841   c = 110698097   prime order bits 2560
+    recipe hit: j = 9244994   c = 110939933   prime order bits 2560
+    recipe hit: j = 9395859   c = 112750313   prime order bits 2560
+    recipe hit: j = 9479713   c = 113756561   prime order bits 2560
+    recipe hit: j = 9819206   c = 117830477   prime order bits 2560
+    recipe hit: j = 9864174   c = 118370093   prime order bits 2561
+    recipe hit: j = 9935101   c = 119221217   prime order bits 2561
+  chunk 11: 1100000/1102457 survivors, 1712 prime p (1497.0s)
+    recipe hit: j = 10112132  c = 121345589   prime order bits 2561
+    recipe hit: j = 10214957  c = 122579489   prime order bits 2560
+    recipe hit: j = 10643476  c = 127721717   prime order bits 2560
+    recipe hit: j = 10706062  c = 128472749   prime order bits 2560
+    recipe hit: j = 10981876  c = 131782517   prime order bits 2561
+  chunk 11: 1102457/1102457 survivors, 48 prime p (1518.2s)
+    recipe hit: j = 11016686  c = 132200237   prime order bits 2560
+  sweep done in 1518.8s: 18646 prime p, 52 recipe hits, 0 ambiguous

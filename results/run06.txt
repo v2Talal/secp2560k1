@@ -1,0 +1,20 @@
+[    0.0s] === 1. FIELD / CURVE ===
+[    0.1s] p_form_ok True p_bits 2560 n_bits 2560
+[    0.1s] p%3 1 p%4 3 p%12 7 n%3 1
+[    0.1s] p prime? True n prime? True
+[    0.1s] G on curve? True G2 on curve? True
+[    0.1s] G2x==Gx True G2==-G ? True Gy parity 1 G2y parity 0
+[    0.1s] Gy tail hex 05ef5c93  G2y tail hex f22f6c40
+[    0.2s] x0=2 on curve (x^3+7 QR)? True   -> G.x should be 2 if G=2*P0
+[    0.2s] G.x == 2 ? False  G.x hex head 0x333333333333  G.x hex tail fffe6c8e8f
+[    0.2s] === 2. ORDER / HASSE ===
+Traceback (most recent call last):
+  File "<workspace>\research\06_secp2560k1_verify.py", line 115, in <module>
+    og = mul(N, (Gx, Gy), P, B)
+  File "<workspace>\research\06_secp2560k1_verify.py", line 66, in mul
+    if bit == '1': R_ = jadd(R_, Pt, p, b)
+                        ~~~~^^^^^^^^^^^^^^
+  File "<workspace>\research\06_secp2560k1_verify.py", line 50, in jadd
+    Y3 = (S2-S1)%p; Y3 = (2*Y3*J)%p
+                          ~~~~^~
+TypeError: unsupported operand type(s) for *: 'int' and 'dict'

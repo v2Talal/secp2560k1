@@ -1,0 +1,126 @@
+{
+  "zeta1": "60197513588986302554485582024885075108884032450952339817679072026166228089408",
+  "zeta2": "55594575648329892869085402983802832744385952214688224221778511981742606582254",
+  "lambda": "78074008874160198520644763525212887401909906723592317393988542598630163514318",
+  "lambda_inverse": "37718080363155996902926221483475020450927657555482586988616620542887997980018",
+  "lattice": {
+    "raw_basis": [
+      [
+        "115792089237316195423570985008687907852837564279074904382605163141518161494337",
+        "0"
+      ],
+      [
+        "37718080363155996902926221483475020450927657555482586988616620542887997980019",
+        "1"
+      ]
+    ],
+    "reduced_basis": [
+      [
+        "303414439467246543595250775667605759171",
+        "-64502973549206556628585045361533709077"
+      ],
+      [
+        "64502973549206556628585045361533709077",
+        "367917413016453100223835821029139468248"
+      ]
+    ],
+    "det": "115792089237316195423570985008687907852837564279074904382605163141518161494337",
+    "len_u1": 310195028448092729432332130933992658737,
+    "len_u2": 373528923106911459729329263971358297377,
+    "sqrt_n": 340282366920938463463374607431768211455,
+    "minkowski_l2_bound": 383967533652687594577067160114934299505,
+    "minkowski_l1_bound": 481231938336009023090067544955250113853,
+    "shortest_relation_l1": 367917413016453100223835821029139468248
+  },
+  "glv_split": {
+    "num_keys": 200,
+    "avg_abs_sum": 169785029113998469570088345301229752718,
+    "avg_abs_sum_bits": 127,
+    "max_bitlen": 128,
+    "sqrt_n_bits": 129,
+    "bitlen_hist": {
+      "123": 1,
+      "124": 3,
+      "125": 10,
+      "126": 33,
+      "127": 122,
+      "128": 31
+    },
+    "cost_bitlen_hist": {
+      "123": 1,
+      "124": 2,
+      "125": 7,
+      "126": 12,
+      "127": 79,
+      "128": 99
+    },
+    "optimality": "exact per-j 1-D minimisation; window expansion (|j| <= 256) never lowered the optimum"
+  },
+  "cost_model": [
+    {
+      "w": 2,
+      "plain_doublings": 254.03333333333333,
+      "plain_additions": 128.2,
+      "plain_cost_Dunits": 433.5133333333333,
+      "glv_doublings": 126.36666666666666,
+      "glv_additions": 71.33333333333333,
+      "glv_cost_Dunits": 226.23333333333332,
+      "speedup": 1.916222189479888
+    },
+    {
+      "w": 3,
+      "plain_doublings": 254.03333333333333,
+      "plain_additions": 63.55,
+      "plain_cost_Dunits": 343.00333333333333,
+      "glv_doublings": 126.36666666666666,
+      "glv_additions": 71.33333333333333,
+      "glv_cost_Dunits": 226.23333333333332,
+      "speedup": 1.5161485192279358
+    },
+    {
+      "w": 4,
+      "plain_doublings": 254.56666666666666,
+      "plain_additions": 85.05,
+      "plain_cost_Dunits": 373.63666666666666,
+      "glv_doublings": 126.36666666666666,
+      "glv_additions": 71.33333333333333,
+      "glv_cost_Dunits": 226.23333333333332,
+      "speedup": 1.6515544423161928
+    },
+    {
+      "w": 5,
+      "plain_doublings": 254.13333333333333,
+      "plain_additions": 96.68333333333334,
+      "plain_cost_Dunits": 389.49,
+      "glv_doublings": 126.36666666666666,
+      "glv_additions": 71.33333333333333,
+      "glv_cost_Dunits": 226.23333333333332,
+      "speedup": 1.7216295859731843
+    },
+    {
+      "w": 6,
+      "plain_doublings": 252.41666666666666,
+      "plain_additions": 128.78333333333333,
+      "plain_cost_Dunits": 432.7133333333333,
+      "glv_doublings": 126.36666666666666,
+      "glv_additions": 71.33333333333333,
+      "glv_cost_Dunits": 226.23333333333332,
+      "speedup": 1.9126860173861795
+    }
+  ],
+  "negative_result": {
+    "verified": true,
+    "statement": "phi acts as public scalar multiplication by lambda in Z/nZ; (E(Fp),+) and (E(Fp),phi) are isomorphic as computational problems, so the DLP is not weakened."
+  },
+  "endomorphism_algebra": {
+    "p_splits_in_Q_sqrt_minus3": true,
+    "End_Fp(E)": "Z[omega]",
+    "Z_rank": 2,
+    "glv_rank_maximal": true
+  },
+  "public_generator_relation": {
+    "dlog_phiG_of_G": "37718080363155996902926221483475020450927657555482586988616620542887997980018",
+    "note": "publicly known => two-base schemes collapse to one base"
+  },
+  "runtime_sec": 0.27
+}

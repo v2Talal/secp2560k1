@@ -1,0 +1,30 @@
+secp2560k1 generator, bits = 256
+stage 1: searching c = 5 (mod 12)
+  hit: c = 977, p prime, exactly one prime sextic order, model b = 7
+  candidates tested: 82
+  p = 2^256 - 2^32 - 977
+  p bits = 256, p mod 12 = 7
+  stage 2: primality of p
+  stage 3: Cornacchia
+    x = 128 bits, y = 125 bits
+  stage 4: the sextic spectrum
+    j = 0, b = 7     order bits 256 prime True
+    j = 1, b = 21    order bits 256 prime False
+    j = 2, b = 63    order bits 256 prime False
+    j = 3, b = 189   order bits 257 prime False
+    j = 4, b = 567   order bits 257 prime False
+    j = 5, b = 1701  order bits 257 prime False
+    N = 256 bits, prime
+  stage 6: the base-point ritual
+    P0 = (1, even), G = 2*P0, on curve
+  stage 7: the cubic endomorphism
+    omega found, lambda = 255 bits, lambda^2 + lambda + 1 = 0 (mod N)
+    CM lattice basis, det = N exactly, both relations hold
+    exact integer decomposition verified, worst half = 128 bits
+  stage 8: the quadratic twist
+    d = 3, b' = 189, n_t = 257 bits, gcd(N, n_t) = 1
+  stage 9: certification
+    N*G = O and N lies in the Hasse window, so #E(Fp) = N and h = 1
+  reduction check
+    the Crandall reduction agrees with exact division
+done in 0.1 s

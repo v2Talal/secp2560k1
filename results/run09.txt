@@ -1,0 +1,14 @@
+[   0.0s] === ECDSA vector #1 ===
+[   0.1s]   424242*G x  = 0x9f4ed653b003230ac5 ...
+[   0.1s]   published x = 0x108c720f6e76b813b9 ...
+[   0.1s]   equal x ? False | equal y ? False | equal as points ? False
+[   0.1s]   published prefix 03  y parity of decompressed 1
+[   1.9s]   ECDSA#1 verifies (e=SHAKE256(msg,320) mod N) ? False
+[   1.9s]   low-S ? True
+[   3.6s]   ECDSA#1 verifies with base -G ? False
+[   5.4s]   ECDSA#2 verifies ? True
+[   5.4s] === SCHNORR vectors ===
+[   7.4s]    #1 s*G2 == R + e*P ? True
+[   7.4s]    #1 pubkey x-even lift ok, R even y: True
+[   9.4s]    #2 s*G2 == R + e*P ? True
+[   9.4s]    #2 pubkey x-even lift ok, R even y: True

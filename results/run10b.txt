@@ -1,0 +1,7 @@
+256-bit basis: det == +-N : True | det bits: 256
+256-bit: cases where float rounding != exact rounding : 200 / 200
+256-bit: worst coefficient error (in units of 1) : 36858830981653716135678
+  -> float mantissa is 53 bits, but the quotient here is ~2^128 bits: the
+     low ~75 bits are simply garbage. No exception is raised.
+  -> at 2560 bits the same expression needs ~2^1278 => OverflowError instead.
+DONE

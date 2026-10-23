@@ -1,0 +1,31 @@
+secp2560k1 generator, bits = 2560
+  p = 2^2560 - 2^320 - 132200237
+  p bits = 2560, p mod 12 = 7
+  stage 2: primality of p
+  stage 3: Cornacchia
+    x = 1279 bits, y = 1280 bits
+  stage 4: the sextic spectrum
+    j = 0, b = 7     order bits 2560 prime True
+    j = 1, b = 21    order bits 2560 prime False
+    j = 2, b = 63    order bits 2561 prime False
+    j = 3, b = 189   order bits 2561 prime False
+    j = 4, b = 567   order bits 2561 prime False
+    j = 5, b = 1701  order bits 2560 prime False
+    N = 2560 bits, prime
+    certifying the order of the model b = 7 by point annihilation
+    the order is certified: it annihilates random points of the model
+  stage 6: the base-point ritual
+    P0 = (2, even), G = 2*P0, on curve
+    x(G) = (p - 8)/5 (mod p), as the closed form predicts
+  stage 7: the cubic endomorphism
+    omega found, lambda = 2558 bits, lambda^2 + lambda + 1 = 0 (mod N)
+    CM lattice basis, det = N exactly, both relations hold
+    exact integer decomposition verified, worst half = 1280 bits
+  stage 8: the quadratic twist
+    d = 2, b' = 56, n_t = 2561 bits, gcd(N, n_t) = 1
+  stage 9: certification
+    N*G = O and N lies in the Hasse window, so #E(Fp) = N and h = 1
+  reduction check
+    the Crandall reduction agrees with exact division
+done in 25.4 s
+wrote gen2560.json

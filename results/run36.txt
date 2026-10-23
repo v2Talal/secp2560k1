@@ -1,0 +1,30 @@
+/rules [list len 6 ]
+   keys: ['j', 'b', 'form', 'rule_3', 'rule_2', 'rule_inert', 'gcd_AB', 'gcd_AB_factors']
+   ex: {"j": 0, "b": "7", "form": "trace=+(x+3y)", "rule_3": {"three_divides_order": false, "three_divides_A": false, "consistent": true}, "rule_2": {"two_divides_order": false, "A_parity_eq_B": false, "consistent": true}, "rule_inert": "no odd prime = 2 mod 3 can divide this order (gcd(A,B) = 1)", "gcd_AB": 1, "gcd_AB_factors": {}}
+/deep_sieve_2e7/limit = 20000000
+/deep_sieve_2e7/classes/1/3 = 1
+/deep_sieve_2e7/classes/1/109 = 1
+/deep_sieve_2e7/classes/2/7 = 2
+/deep_sieve_2e7/classes/3/3 = 1
+/deep_sieve_2e7/classes/4/7 = 1
+/deep_sieve_2e7/classes/4/13 = 1
+/deep_sieve_2e7/classes/4/19 = 1
+/deep_sieve_2e7/classes/4/223 = 1
+/deep_sieve_2e7/classes/4/274693 = 1
+/deep_sieve_2e7/classes/5/3 = 3
+/deep_sieve_2e7/classes/5/73 = 1
+/cornacchia/x_bits = 1279
+/cornacchia/y_bits = 1280
+/classes [list len 6 ]
+   keys: ['j', 'b', 'trace', 'order_bits', 'is_prime', 'form', 'd', 'A_bits', 'B_bits', 'gcd_AB', 'gcd_AB_bits', 'gcd_AB_factors', 'inert_candidates', 'small_factors', 'factor_check', 'A_mod_q', '_A', '_B', 'sieve_2e6', 'rule_3', 'rule_2', 'rule_inert', 'sieve_2e7']
+   ex: {"j": 0, "b": "7", "trace": "40828859008473089079303011261044635996734640281326442181696026280456253106283494630680126911947294477587437476162325227467501024526437730251606037388179363579123791918463153628372029770345028397263890501038277837374114770774014595328500332612429135139066641475200981621741447436269243255212971947252984534886503391238020984208149175980573008362343224436510735324644145485
+/twist/v3 = 1
+/twist/remainder_bits = 2559
+/twist/nt_small_factors_below_2e6/3 = 1
+/probabilities/any_odd_prime = 0.07739262810374478
+/probabilities/q_1_mod_3 = 0.3684435153525319
+/probabilities/q_2_mod_3 = 0.21005289787688614
+/probabilities/primes_1_mod_3 = 74412
+/probabilities/primes_2_mod_3 = 74520
+/probabilities/at_2e7_any_odd_prime = 0.06679476280740126
+/probabilities/at_2e7_q_1_mod_3 = 0.34229484611602895

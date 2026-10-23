@@ -1,0 +1,65 @@
+========================================================================
+SCRIPT 03 -- GLV / CM LATTICE ANALYSIS FOR secp256k1
+========================================================================
+Cornacchia  p = x^2 + 3y^2 : x = 335665926241849821909543298348372613710
+                              y = 32251486774603278314292522680766854539
+zeta1 = 60197513588986302554485582024885075108884032450952339817679072026166228089408
+zeta2 = 55594575648329892869085402983802832744385952214688224221778511981742606582254
+lambda = 78074008874160198520644763525212887401909906723592317393988542598630163514318
+lambda^2 + lambda + 1 == 0 (mod n) : True
+
+--- CM lattice L = {(a,b) : a + b*lambda = 0 mod n} ---
+  raw basis v1 = [115792089237316195423570985008687907852837564279074904382605163141518161494337, 0]
+  raw basis v2 = [37718080363155996902926221483475020450927657555482586988616620542887997980019, 1]
+  det = 115792089237316195423570985008687907852837564279074904382605163141518161494337   (== n ? True)
+  membership check a + b*lambda = 0 (mod n): OK
+  reduced u1 = [303414439467246543595250775667605759171, -64502973549206556628585045361533709077]
+  reduced u2 = [64502973549206556628585045361533709077, 367917413016453100223835821029139468248]
+  |u1| = 310195028448092729432332130933992658737   |u2| = 373528923106911459729329263971358297377   sqrt(n) = 340282366920938463463374607431768211455
+  det(reduced) = 115792089237316195423570985008687907852837564279074904382605163141518161494337  (still n)
+  Minkowski L2 bound 2*sqrt(n/pi)  = 383967533652687594577067160114934299505  (shortest <= ? True)
+  Minkowski L1 bound  sqrt(2n)     = 481231938336009023090067544955250113853
+  |u1|_1 = 367917413016453100223835821029139468248   |u2|_1 = 432420386565659656852420866390673177325
+  => shortest relation |a|+|b| ~ 367917413016453100223835821029139468248  (sqrt(2n) = 481231938336009023090067544955250113853)
+
+--- exact 2D CVP => optimal GLV split  k = k1 + k2*lambda (mod n) ---
+  j-window half-width around Babai rounding: 4 (inner minimisation over m is EXACT)
+  example k         = 61502035777991825015406809689244321046649994158281002391191934334850324740561
+  example k1        = 69535354437560632295961690142815513125
+  example k2        = -136043752972050530476209917920518206925
+  example |k1|+|k2| = 205579107409611162772171608063333720050   (certified at window radius 4)
+  200 random keys: exact optimal split, all verified (k1 + k2*lambda = k mod n)
+  average |k1|+|k2| = 169785029113998469570088345301229752718  (2^127)
+  max bitlength of (k1,k2) = 128   (sqrt(n) = 129 bits)
+  bitlength histogram: [(123, 1), (124, 3), (125, 10), (126, 33), (127, 122), (128, 31)]
+  cost bitlength histogram: [(123, 1), (124, 2), (125, 7), (126, 12), (127, 79), (128, 99)]
+
+--- cost model: plain wNAF(w)  vs  GLV joint sparse form ---
+  (D = doublings, A = additions; cost in D-units with A = 1.4 D)
+  w=2: plain  254.0D + 128.2A =  433.5   |   GLV  126.4D +  71.3A =  226.2   |   speedup 1.9162x
+  w=3: plain  254.0D +  63.5A =  343.0   |   GLV  126.4D +  71.3A =  226.2   |   speedup 1.5161x
+  w=4: plain  254.6D +  85.0A =  373.6   |   GLV  126.4D +  71.3A =  226.2   |   speedup 1.6516x
+  w=5: plain  254.1D +  96.7A =  389.5   |   GLV  126.4D +  71.3A =  226.2   |   speedup 1.7216x
+  w=6: plain  252.4D + 128.8A =  432.7   |   GLV  126.4D +  71.3A =  226.2   |   speedup 1.9127x
+
+--- NEGATIVE RESULT: the CM endomorphism does NOT weaken the DLP ---
+  phi(P) = (zeta*x, y) lies on E and x(phi(P)) = x(lambda*P): True
+  => phi is an Fp-endomorphism; (E(Fp), phi) is isomorphic to
+     (Z/nZ, x |-> lambda*x) via P |-> [k], and lambda is PUBLIC.
+  => any algorithm for the CM-augmented problem gives an algorithm
+     for the plain DLP at the SAME cost: no generic-group speedup.
+  => the endomorphism is a constant-factor arithmetic win (GLV),
+     NOT a complexity reduction.
+
+--- endomorphism algebra ---
+  p = x^2 + 3y^2 (integer) => p splits in Q(sqrt(-3))
+  => End_Fp(E) = Z[omega], omega = (-1+sqrt(-3))/2, Z-rank 2
+  => rank-2 GLV is MAXIMAL for secp256k1.
+  => rank-4 (quaternionic) acceleration exists ONLY for supersingular
+     curves, which are unusable as NIST-level prime-order curves.
+
+--- public relation for H = phi(G) ---
+  dlog_H(G) = lambda^(-1) = 37718080363155996902926221483475020450927657555482586988616620542887997980018
+  => H = phi(G) is NOT a valid NUMS second generator.
+
+done in 0.27s -> 03_out.json

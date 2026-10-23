@@ -1,0 +1,98 @@
+{
+ "bits": 256,
+ "c": 977,
+ "p": "0xfffffffffffffffffffffffffffffffffffffffffffffffffffffffefffffc2f",
+ "p_dec": "115792089237316195423570985008687907853269984665640564039457584007908834671663",
+ "p_is_prime": true,
+ "cornacchia_x": "0xfc86e7e6d4f8be0f638ac81b54025a4e",
+ "cornacchia_y": "0x18436910d3ea35e6f43648724942758b",
+ "cornacchia_x_bits": 128,
+ "cornacchia_y_bits": 125,
+ "models": [
+  {
+   "j": 0,
+   "b": 7,
+   "trace": "0x14551231950b75fc4402da1722fc9baef",
+   "order": "0xfffffffffffffffffffffffffffffffebaaedce6af48a03bbfd25e8cd0364141",
+   "order_bits": 256,
+   "order_is_prime": true
+  },
+  {
+   "j": 1,
+   "b": 21,
+   "trace": "0x1f90dcfcda9f17c1ec7159036a804b49c",
+   "order": "0xfffffffffffffffffffffffffffffffe06f23032560e83e138ea6fc857fb4794",
+   "order_bits": 256,
+   "order_is_prime": false
+  },
+  {
+   "j": 2,
+   "b": 63,
+   "trace": "0xb3bcacb4593a1c5a86e7eec4783af9ad",
+   "order": "0xffffffffffffffffffffffffffffffff4c43534ba6c5e3a57918113a87c50283",
+   "order_bits": 256,
+   "order_is_prime": false
+  },
+  {
+   "j": 3,
+   "b": 189,
+   "trace": "-0x14551231950b75fc4402da1722fc9baef",
+   "order": "0x1000000000000000000000000000000014551231950b75fc4402da1712fc9b71f",
+   "order_bits": 257,
+   "order_is_prime": false
+  },
+  {
+   "j": 4,
+   "b": 567,
+   "trace": "-0x1f90dcfcda9f17c1ec7159036a804b49c",
+   "order": "0x100000000000000000000000000000001f90dcfcda9f17c1ec7159035a804b0cc",
+   "order_bits": 257,
+   "order_is_prime": false
+  },
+  {
+   "j": 5,
+   "b": 1701,
+   "trace": "-0xb3bcacb4593a1c5a86e7eec4783af9ad",
+   "order": "0x100000000000000000000000000000000b3bcacb4593a1c5a86e7eec3783af5dd",
+   "order_bits": 257,
+   "order_is_prime": false
+  }
+ ],
+ "n": "0xfffffffffffffffffffffffffffffffebaaedce6af48a03bbfd25e8cd0364141",
+ "n_dec": "115792089237316195423570985008687907852837564279074904382605163141518161494337",
+ "n_bits": 256,
+ "t": "0x14551231950b75fc4402da1722fc9baef",
+ "t_bits": 129,
+ "Gx": "0xc7ffffffffffffffffffffffffffffffffffffffffffffffffffffff37fffd03",
+ "Gy": "0x4298c557a7ddcc570e8bf054c4cad9e99f396b3ce19d50f1b91c9df4bb00d333",
+ "P0_x": "1",
+ "P0_y_even": true,
+ "G_is_2P0": true,
+ "omega": "0x7ae96a2b657c07106e64479eac3434e99cf0497512f58995c1396c28719501ee",
+ "lambda": "0x5363ad4cc05c30e0a5261c028812645a122e22ea20816678df02967c1b23bd72",
+ "lambda_inv": "0xac9c52b33fa3cf1f5ad9e3fd77ed9ba4a880b9fc8ec739c2e0cfc810b51283ce",
+ "basis": {
+  "a1": "64502973549206556628585045361533709077",
+  "b1": "-303414439467246543595250775667605759171",
+  "a2": "367917413016453100223835821029139468248",
+  "b2": "64502973549206556628585045361533709077",
+  "det": "115792089237316195423570985008687907852837564279074904382605163141518161494337",
+  "det_equals_n": true
+ },
+ "decompose_max_half_bits": 128,
+ "twist": {
+  "d": 3,
+  "b": "189",
+  "order": "0x1000000000000000000000000000000014551231950b75fc4402da1712fc9b71f",
+  "order_bits": 257,
+  "v3": 2,
+  "rational_3torsion": true,
+  "gcd_with_n": 1
+ },
+ "N_times_G_is_O": true,
+ "n_in_hasse_window": true,
+ "cofactor": 1,
+ "crandall_ok": true,
+ "candidates_tested": 82,
+ "elapsed_seconds": 0.06
+}

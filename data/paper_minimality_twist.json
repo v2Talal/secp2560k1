@@ -1,0 +1,175 @@
+{
+ "meta": {
+  "generated_by": "research/34_minimality_tables.py",
+  "sieve_bound": 20000000,
+  "sieve_primes": 1270605
+ },
+ "class_counts": {
+  "negative": 13,
+  "2": 7,
+  "5": 3,
+  "0": 14,
+  "4": 5,
+  "1": 2,
+  "3": 8
+ },
+ "class_b": {
+  "0": 7,
+  "1": 21,
+  "2": 63,
+  "3": 189,
+  "4": 567,
+  "5": 1701
+ },
+ "class_names": {
+  "0": "b = 7",
+  "1": "b = 21",
+  "2": "b = 63",
+  "3": "b = 189",
+  "4": "b = 567",
+  "5": "b = 1701"
+ },
+ "class0_rows": [
+  {
+   "c": 7701569,
+   "j": 641797,
+   "N_bits": 2561,
+   "t_bits": 1281,
+   "nt_bits": 2560,
+   "gcd_N_nt": 1,
+   "twist_smallest_factor": null,
+   "twist_rough_2e7": true
+  },
+  {
+   "c": 10572761,
+   "j": 881063,
+   "N_bits": 2560,
+   "t_bits": 1281,
+   "nt_bits": 2561,
+   "gcd_N_nt": 1,
+   "twist_smallest_factor": 7,
+   "twist_rough_2e7": false
+  },
+  {
+   "c": 15070289,
+   "j": 1255857,
+   "N_bits": 2560,
+   "t_bits": 1281,
+   "nt_bits": 2561,
+   "gcd_N_nt": 1,
+   "twist_smallest_factor": 19,
+   "twist_rough_2e7": false
+  },
+  {
+   "c": 20061401,
+   "j": 1671783,
+   "N_bits": 2560,
+   "t_bits": 1276,
+   "nt_bits": 2561,
+   "gcd_N_nt": 1,
+   "twist_smallest_factor": 7,
+   "twist_rough_2e7": false
+  },
+  {
+   "c": 25201733,
+   "j": 2100144,
+   "N_bits": 2560,
+   "t_bits": 1281,
+   "nt_bits": 2561,
+   "gcd_N_nt": 1,
+   "twist_smallest_factor": 7,
+   "twist_rough_2e7": false
+  },
+  {
+   "c": 34980317,
+   "j": 2915026,
+   "N_bits": 2560,
+   "t_bits": 1281,
+   "nt_bits": 2561,
+   "gcd_N_nt": 1,
+   "twist_smallest_factor": 7,
+   "twist_rough_2e7": false
+  },
+  {
+   "c": 45642593,
+   "j": 3803549,
+   "N_bits": 2560,
+   "t_bits": 1281,
+   "nt_bits": 2561,
+   "gcd_N_nt": 1,
+   "twist_smallest_factor": 19,
+   "twist_rough_2e7": false
+  },
+  {
+   "c": 71315681,
+   "j": 5942973,
+   "N_bits": 2560,
+   "t_bits": 1281,
+   "nt_bits": 2561,
+   "gcd_N_nt": 1,
+   "twist_smallest_factor": null,
+   "twist_rough_2e7": true
+  },
+  {
+   "c": 104009693,
+   "j": 8667474,
+   "N_bits": 2561,
+   "t_bits": 1281,
+   "nt_bits": 2560,
+   "gcd_N_nt": 1,
+   "twist_smallest_factor": 283,
+   "twist_rough_2e7": false
+  },
+  {
+   "c": 112750313,
+   "j": 9395859,
+   "N_bits": 2560,
+   "t_bits": 1280,
+   "nt_bits": 2561,
+   "gcd_N_nt": 1,
+   "twist_smallest_factor": 13,
+   "twist_rough_2e7": false
+  },
+  {
+   "c": 119221217,
+   "j": 9935101,
+   "N_bits": 2561,
+   "t_bits": 1279,
+   "nt_bits": 2560,
+   "gcd_N_nt": 1,
+   "twist_smallest_factor": 7,
+   "twist_rough_2e7": false
+  },
+  {
+   "c": 121345589,
+   "j": 10112132,
+   "N_bits": 2561,
+   "t_bits": 1278,
+   "nt_bits": 2560,
+   "gcd_N_nt": 1,
+   "twist_smallest_factor": 7,
+   "twist_rough_2e7": false
+  },
+  {
+   "c": 127721717,
+   "j": 10643476,
+   "N_bits": 2560,
+   "t_bits": 1280,
+   "nt_bits": 2561,
+   "gcd_N_nt": 1,
+   "twist_smallest_factor": 7,
+   "twist_rough_2e7": false
+  },
+  {
+   "c": 132200237,
+   "j": 11016686,
+   "N_bits": 2560,
+   "t_bits": 1281,
+   "nt_bits": 2561,
+   "gcd_N_nt": 1,
+   "twist_smallest_factor": null,
+   "twist_rough_2e7": true
+  }
+ ],
+ "rough_count": 3
+}

@@ -1,0 +1,472 @@
+{
+ "rows": [
+  {
+   "j": 39213,
+   "c": 470561,
+   "class_index": null,
+   "is_class0_b7": false,
+   "three_is_non_square": true,
+   "three_is_not_a_cube": false,
+   "class3_generates": false
+  },
+  {
+   "j": 115032,
+   "c": 1380389,
+   "class_index": 2,
+   "is_class0_b7": false,
+   "three_is_non_square": true,
+   "three_is_not_a_cube": true,
+   "class3_generates": true
+  },
+  {
+   "j": 163718,
+   "c": 1964621,
+   "class_index": null,
+   "is_class0_b7": false,
+   "three_is_non_square": true,
+   "three_is_not_a_cube": false,
+   "class3_generates": false
+  },
+  {
+   "j": 349352,
+   "c": 4192229,
+   "class_index": 5,
+   "is_class0_b7": false,
+   "three_is_non_square": true,
+   "three_is_not_a_cube": true,
+   "class3_generates": true
+  },
+  {
+   "j": 641797,
+   "c": 7701569,
+   "class_index": 0,
+   "is_class0_b7": true,
+   "three_is_non_square": true,
+   "three_is_not_a_cube": true,
+   "class3_generates": true
+  },
+  {
+   "j": 857693,
+   "c": 10292321,
+   "class_index": null,
+   "is_class0_b7": false,
+   "three_is_non_square": true,
+   "three_is_not_a_cube": false,
+   "class3_generates": false
+  },
+  {
+   "j": 876873,
+   "c": 10522481,
+   "class_index": 4,
+   "is_class0_b7": false,
+   "three_is_non_square": true,
+   "three_is_not_a_cube": true,
+   "class3_generates": true
+  },
+  {
+   "j": 881063,
+   "c": 10572761,
+   "class_index": 0,
+   "is_class0_b7": true,
+   "three_is_non_square": true,
+   "three_is_not_a_cube": false,
+   "class3_generates": false
+  },
+  {
+   "j": 964762,
+   "c": 11577149,
+   "class_index": 4,
+   "is_class0_b7": false,
+   "three_is_non_square": true,
+   "three_is_not_a_cube": true,
+   "class3_generates": true
+  },
+  {
+   "j": 1043384,
+   "c": 12520613,
+   "class_index": 1,
+   "is_class0_b7": false,
+   "three_is_non_square": true,
+   "three_is_not_a_cube": true,
+   "class3_generates": true
+  },
+  {
+   "j": 1255857,
+   "c": 15070289,
+   "class_index": 0,
+   "is_class0_b7": true,
+   "three_is_non_square": true,
+   "three_is_not_a_cube": true,
+   "class3_generates": true
+  },
+  {
+   "j": 1671783,
+   "c": 20061401,
+   "class_index": 0,
+   "is_class0_b7": true,
+   "three_is_non_square": true,
+   "three_is_not_a_cube": false,
+   "class3_generates": false
+  },
+  {
+   "j": 1840606,
+   "c": 22087277,
+   "class_index": null,
+   "is_class0_b7": false,
+   "three_is_non_square": true,
+   "three_is_not_a_cube": false,
+   "class3_generates": false
+  },
+  {
+   "j": 2100144,
+   "c": 25201733,
+   "class_index": 0,
+   "is_class0_b7": true,
+   "three_is_non_square": true,
+   "three_is_not_a_cube": false,
+   "class3_generates": false
+  },
+  {
+   "j": 2321632,
+   "c": 27859589,
+   "class_index": 5,
+   "is_class0_b7": false,
+   "three_is_non_square": true,
+   "three_is_not_a_cube": true,
+   "class3_generates": true
+  },
+  {
+   "j": 2712413,
+   "c": 32548961,
+   "class_index": 2,
+   "is_class0_b7": false,
+   "three_is_non_square": true,
+   "three_is_not_a_cube": true,
+   "class3_generates": true
+  },
+  {
+   "j": 2805427,
+   "c": 33665129,
+   "class_index": 2,
+   "is_class0_b7": false,
+   "three_is_non_square": true,
+   "three_is_not_a_cube": true,
+   "class3_generates": true
+  },
+  {
+   "j": 2815832,
+   "c": 33789989,
+   "class_index": 3,
+   "is_class0_b7": false,
+   "three_is_non_square": true,
+   "three_is_not_a_cube": true,
+   "class3_generates": true
+  },
+  {
+   "j": 2915026,
+   "c": 34980317,
+   "class_index": 0,
+   "is_class0_b7": true,
+   "three_is_non_square": true,
+   "three_is_not_a_cube": true,
+   "class3_generates": true
+  },
+  {
+   "j": 3236059,
+   "c": 38832713,
+   "class_index": null,
+   "is_class0_b7": false,
+   "three_is_non_square": true,
+   "three_is_not_a_cube": false,
+   "class3_generates": false
+  },
+  {
+   "j": 3520162,
+   "c": 42241949,
+   "class_index": 2,
+   "is_class0_b7": false,
+   "three_is_non_square": true,
+   "three_is_not_a_cube": true,
+   "class3_generates": true
+  },
+  {
+   "j": 3803549,
+   "c": 45642593,
+   "class_index": 0,
+   "is_class0_b7": true,
+   "three_is_non_square": true,
+   "three_is_not_a_cube": true,
+   "class3_generates": true
+  },
+  {
+   "j": 4249431,
+   "c": 50993177,
+   "class_index": 2,
+   "is_class0_b7": false,
+   "three_is_non_square": true,
+   "three_is_not_a_cube": true,
+   "class3_generates": true
+  },
+  {
+   "j": 4356277,
+   "c": 52275329,
+   "class_index": 2,
+   "is_class0_b7": false,
+   "three_is_non_square": true,
+   "three_is_not_a_cube": true,
+   "class3_generates": true
+  },
+  {
+   "j": 5096766,
+   "c": 61161197,
+   "class_index": 3,
+   "is_class0_b7": false,
+   "three_is_non_square": true,
+   "three_is_not_a_cube": true,
+   "class3_generates": true
+  },
+  {
+   "j": 5487381,
+   "c": 65848577,
+   "class_index": null,
+   "is_class0_b7": false,
+   "three_is_non_square": true,
+   "three_is_not_a_cube": false,
+   "class3_generates": false
+  },
+  {
+   "j": 5681408,
+   "c": 68176901,
+   "class_index": 3,
+   "is_class0_b7": false,
+   "three_is_non_square": true,
+   "three_is_not_a_cube": true,
+   "class3_generates": true
+  },
+  {
+   "j": 5942973,
+   "c": 71315681,
+   "class_index": 0,
+   "is_class0_b7": true,
+   "three_is_non_square": true,
+   "three_is_not_a_cube": true,
+   "class3_generates": true
+  },
+  {
+   "j": 6056026,
+   "c": 72672317,
+   "class_index": 4,
+   "is_class0_b7": false,
+   "three_is_non_square": true,
+   "three_is_not_a_cube": true,
+   "class3_generates": true
+  },
+  {
+   "j": 6535883,
+   "c": 78430601,
+   "class_index": 2,
+   "is_class0_b7": false,
+   "three_is_non_square": true,
+   "three_is_not_a_cube": true,
+   "class3_generates": true
+  },
+  {
+   "j": 6723579,
+   "c": 80682953,
+   "class_index": 4,
+   "is_class0_b7": false,
+   "three_is_non_square": true,
+   "three_is_not_a_cube": true,
+   "class3_generates": true
+  },
+  {
+   "j": 6775369,
+   "c": 81304433,
+   "class_index": 3,
+   "is_class0_b7": false,
+   "three_is_non_square": true,
+   "three_is_not_a_cube": true,
+   "class3_generates": true
+  },
+  {
+   "j": 7163054,
+   "c": 85956653,
+   "class_index": 3,
+   "is_class0_b7": false,
+   "three_is_non_square": true,
+   "three_is_not_a_cube": true,
+   "class3_generates": true
+  },
+  {
+   "j": 7300229,
+   "c": 87602753,
+   "class_index": null,
+   "is_class0_b7": false,
+   "three_is_non_square": true,
+   "three_is_not_a_cube": false,
+   "class3_generates": false
+  },
+  {
+   "j": 8130921,
+   "c": 97571057,
+   "class_index": 4,
+   "is_class0_b7": false,
+   "three_is_non_square": true,
+   "three_is_not_a_cube": true,
+   "class3_generates": true
+  },
+  {
+   "j": 8643196,
+   "c": 103718357,
+   "class_index": null,
+   "is_class0_b7": false,
+   "three_is_non_square": true,
+   "three_is_not_a_cube": false,
+   "class3_generates": false
+  },
+  {
+   "j": 8667474,
+   "c": 104009693,
+   "class_index": 0,
+   "is_class0_b7": true,
+   "three_is_non_square": true,
+   "three_is_not_a_cube": false,
+   "class3_generates": false
+  },
+  {
+   "j": 9172127,
+   "c": 110065529,
+   "class_index": 3,
+   "is_class0_b7": false,
+   "three_is_non_square": true,
+   "three_is_not_a_cube": true,
+   "class3_generates": true
+  },
+  {
+   "j": 9216117,
+   "c": 110593409,
+   "class_index": null,
+   "is_class0_b7": false,
+   "three_is_non_square": true,
+   "three_is_not_a_cube": false,
+   "class3_generates": false
+  },
+  {
+   "j": 9224841,
+   "c": 110698097,
+   "class_index": 3,
+   "is_class0_b7": false,
+   "three_is_non_square": true,
+   "three_is_not_a_cube": true,
+   "class3_generates": true
+  },
+  {
+   "j": 9244994,
+   "c": 110939933,
+   "class_index": null,
+   "is_class0_b7": false,
+   "three_is_non_square": true,
+   "three_is_not_a_cube": false,
+   "class3_generates": false
+  },
+  {
+   "j": 9395859,
+   "c": 112750313,
+   "class_index": 0,
+   "is_class0_b7": true,
+   "three_is_non_square": true,
+   "three_is_not_a_cube": true,
+   "class3_generates": true
+  },
+  {
+   "j": 9479713,
+   "c": 113756561,
+   "class_index": null,
+   "is_class0_b7": false,
+   "three_is_non_square": true,
+   "three_is_not_a_cube": false,
+   "class3_generates": false
+  },
+  {
+   "j": 9819206,
+   "c": 117830477,
+   "class_index": 5,
+   "is_class0_b7": false,
+   "three_is_non_square": true,
+   "three_is_not_a_cube": true,
+   "class3_generates": true
+  },
+  {
+   "j": 9864174,
+   "c": 118370093,
+   "class_index": null,
+   "is_class0_b7": false,
+   "three_is_non_square": true,
+   "three_is_not_a_cube": false,
+   "class3_generates": false
+  },
+  {
+   "j": 9935101,
+   "c": 119221217,
+   "class_index": 0,
+   "is_class0_b7": true,
+   "three_is_non_square": true,
+   "three_is_not_a_cube": true,
+   "class3_generates": true
+  },
+  {
+   "j": 10112132,
+   "c": 121345589,
+   "class_index": 0,
+   "is_class0_b7": true,
+   "three_is_non_square": true,
+   "three_is_not_a_cube": true,
+   "class3_generates": true
+  },
+  {
+   "j": 10214957,
+   "c": 122579489,
+   "class_index": null,
+   "is_class0_b7": false,
+   "three_is_non_square": true,
+   "three_is_not_a_cube": false,
+   "class3_generates": false
+  },
+  {
+   "j": 10643476,
+   "c": 127721717,
+   "class_index": 0,
+   "is_class0_b7": true,
+   "three_is_non_square": true,
+   "three_is_not_a_cube": false,
+   "class3_generates": false
+  },
+  {
+   "j": 10706062,
+   "c": 128472749,
+   "class_index": 3,
+   "is_class0_b7": false,
+   "three_is_non_square": true,
+   "three_is_not_a_cube": true,
+   "class3_generates": true
+  },
+  {
+   "j": 10981876,
+   "c": 131782517,
+   "class_index": 1,
+   "is_class0_b7": false,
+   "three_is_non_square": true,
+   "three_is_not_a_cube": false,
+   "class3_generates": false
+  },
+  {
+   "j": 11016686,
+   "c": 132200237,
+   "class_index": 0,
+   "is_class0_b7": true,
+   "three_is_non_square": true,
+   "three_is_not_a_cube": true,
+   "class3_generates": true
+  }
+ ]
+}

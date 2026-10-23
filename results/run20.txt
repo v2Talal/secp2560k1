@@ -1,0 +1,22 @@
+[   0.0s] loaded p (2560 bits), N (2560 bits)
+[   0.0s] sextic quotient structure ...
+[   0.0s] 6 | p-1 ? True ; 12 | p-1 ? False
+[   0.4s] order of the class of 3 in Fp*/(Fp*)^6 : 6
+[   0.4s] certifying orders of the six models b = 7*3^j ...
+[   0.4s] six candidate orders: bits [2560, 2561, 2560, 2561, 2561, 2560]
+[   6.3s]   j=0  class C2  order bits=2560  certified=True
+[  12.4s]   j=1  class C0  order bits=2560  certified=True
+[  18.5s]   j=2  class C4  order bits=2561  certified=True
+[  24.7s]   j=3  class C3  order bits=2561  certified=True
+[  31.0s]   j=4  class C1  order bits=2561  certified=True
+[  37.3s]   j=5  class C5  order bits=2560  certified=True
+[  37.3s] rational 2-torsion test ...
+[  37.4s] -b is a cube mod p (=> rational 2-torsion on E): False
+[  37.5s] -b' is a cube mod p (=> rational 2-torsion on twist): False
+[  37.5s] Cornacchia statistics ...
+[  37.5s]   euclid steps = 746
+[  37.5s] six traces, full ...
+[  37.5s] lambda checks ...
+[  37.7s]   p-1 small factors [(2, 1), (3, 2), (811, 1), (12197, 1), (18749, 1)] ; N-1 small factors [(2, 4), (3, 2), (7, 2), (11, 1), (67, 1), (283, 1), (317, 1), (613, 1)]
+[  37.7s] wrote paper_extra2.json
+[  37.7s] done

@@ -1,0 +1,11 @@
+[   0.0s] det == N ? True
+[   0.0s] F6: scanning x for the base point ...
+[  13.6s] first x with x^3+7 a QR: 2 ; hits in [2,202): 108
+[  14.6s] wrote f6_ritual_scan.svg
+[  14.6s] F8: sampling GLV decompositions ...
+[  14.6s] decompose verified 200/200 ; max bits 1279/1280
+[  15.0s] wrote f8_glv_halflengths.svg
+[  15.0s] F7: security landscape ...
+[  15.5s] wrote f7_security_landscape.svg
+[  15.5s] wrote paper_extra.json
+[  15.5s] done

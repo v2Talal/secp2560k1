@@ -1,0 +1,15 @@
+==========================================================================
+Does the minimality recipe (c = 5 mod 12, step 12) reproduce
+secp256k1 (c = 977) at 256 bits?
+==========================================================================
+  c= 977  p prime  |  exactly one prime sextic order: 115792089237316195423570985008687907852837564279074904382605163141518161494337
+            == secp256k1 n ? True   trace t = 432420386565659656852420866390673177327
+--------------------------------------------------------------------------
+candidates tested (c = 5 mod 12, c <= 977): 82
+first c giving a prime p with a unique prime-order sextic member: 977
+secp256k1's c: 977   ->  REPRODUCES EXACTLY: True
+all such c <= 977: [977]
+
+VERDICT: the recipe is GENERAL -- at 256 bits it lands exactly on
+         secp256k1's c = 977.  This is a strong, cheap
+         reproducibility argument to put in the paper.

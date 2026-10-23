@@ -1,0 +1,80 @@
+========================================================================
+SCRIPT 04 -- SECURITY INVARIANTS OF secp256k1
+========================================================================
+p = 115792089237316195423570985008687907853269984665640564039457584007908834671663
+n = 115792089237316195423570985008687907852837564279074904382605163141518161494337
+t = p + 1 - n = 432420386565659656852420866390673177327   (129 bits, positive)
+Hasse window: [115792089237316195423570985008687907852589419931798687112530834793045298248751, 115792089237316195423570985008687907853950549399482440966384333222772371094577]   n inside: True
+
+--- curve type ---
+  p mod 3 = 1  -> p == 1 (mod 3)  => ORDINARY (not supersingular)
+  p mod 4 = 3   p mod 9 = 7  (9 does not divide p-1)
+  anomalous (n == p)? False  -> Smart attack NOT applicable
+  supersingular requires p == 2,3 (mod 4) for odd p; p = 3 mod 4 here
+  => p = 3 (mod 4) is compatible with ordinary curves (j = 0, b != 0)
+
+--- rational torsion over Fp ---
+  -7 is a cube mod p? False  -> rational 2-torsion: False
+  3 | n ? False  -> E has NO rational 3-torsion
+  quadratic twist: b' = b*nu^3 = 189 (nu = 3, nonsquare)
+  rational point of order 3 on the TWIST E' (b=189)? True
+    P3 = (53752591420737253357354794335102420694228939304826821434373703395273947362954, 4493909480752583470388510762277414377645945826401242149811611763934332091089)
+    check 3*P3 = O : True
+  rational point of order 3 on E (b=7)? False
+
+--- embedding degree ord_n(p) (MOV / Frey-Ruck) ---
+  brute force: smallest k <= 10^6 with p^k = 1 (mod n): None
+  n-1 small factors: {2: 6, 3: 1, 149: 1, 631: 1}  (cofactor prime? False)
+  after stripping small prime factors of n-1: d = 19298681539552699237261830834781317975472927379845817397100860523586360249056
+  => ord_n(p) divides d; brute force proves ord_n(p) > 1000000
+  n-1 not fully factored -> exact order not computed; lower bound 1000000 suffices for MOV blockage
+
+--- Fp-rational 3-isogeny class of E (sextic twists) ---
+  Fp*/(Fp*)^6 has 6 elements (p = 1 mod 3, 9 does not divide p-1)
+  sextic representatives b*3^j : [7, 21, 63, 189, 567, 1701]
+  b =    7  (7*3^j)   trace = 432420386565659656852420866390673177327   order = 115792089237316195423570985008687907852837564279074904382605163141518161494337
+  b =   21  (7*3^j)   trace = 671331852483699643819086596696745227420   order = 115792089237316195423570985008687907852598652813156864395638497411212089444244
+  b =   63  (7*3^j)   trace = 238911465918039986966665730306072050093   order = 115792089237316195423570985008687907853031073199722524052490918277602762621571
+  b =  189  (7*3^j)   trace = -432420386565659656852420866390673177327   order = 115792089237316195423570985008687907853702405052206223696310004874299507848991
+  b =  567  (7*3^j)   trace = -671331852483699643819086596696745227420   order = 115792089237316195423570985008687907853941316518124263683276670604605579899084
+  b = 1701  (7*3^j)   trace = -238911465918039986966665730306072050093   order = 115792089237316195423570985008687907853508896131558604026424249738214906721757
+
+  3-adic structure of the certified orders:
+    b =    7: 3-part = 3^0
+    b =   21: 3-part = 3^1
+    b =   63: 3-part = 3^0
+    b =  189: 3-part = 3^2
+    b =  567: 3-part = 3^0
+    b = 1701: 3-part = 3^1
+  trace(E)  mod 3 = 1      trace(E') mod 3 = 2
+  => traces differ mod 3 => E and E' are NOT 3-isogenous over Fp
+  gcd(#E, #E') = 1  (coprime orders)
+
+--- the rational 3-isogeny is DESCENDING (inert) ---
+  isogeny3(G) on E_(b=-27b) = E_(-189): True
+  kernel of the 3-isogeny is {O,(0,+-sqrt(7)}; 7 is a quadratic
+  NON-residue mod p (Legendre (7/p) = -1, p = 1 mod 7), so the kernel
+  is NOT rational over Fp => the 3-isogeny is descending (inert).
+  Legendre symbol (7/p) = 115792089237316195423570985008687907853269984665640564039457584007908834671661
+
+--- attack family verdicts ---
+  * Pollard rho (generic DLP)
+      GENERIC COST ~ sqrt(n) = 2^128; CM gives NO speedup because phi is public scalar multiplication by lambda
+  * MOV / Frey-Ruck (small embedding degree)
+      BLOCKED (ord_n(p) > 10^6)
+  * Weil descent / GHS (3-descent)
+      BLOCKED for E: no rational 3-torsion, all 3-isogenies in E's class are descending, traces differ mod 3; NOT blocked for the quadratic twist E' (which has rational 3-torsion)
+  * Smart / anomalous (n = p)
+      N/A (n != p)
+  * Supersingular (p = 2,3 mod 4 + #E = p+1)
+      N/A (curve is ordinary)
+  * Pohlig-Hellman (smooth order)
+      N/A (n is prime)
+  * Koblitz/Mestre 2-dimensional lattice attack
+      NOT APPLICABLE: the CM endomorphism is public (phi = multiplication by a public lambda), so it yields no advantage over generic Pollard rho
+  * Tate pairing / MOV on twist
+      BLOCKED (same embedding degree)
+  * Endormorphism-assisted DLP
+      NO advantage (public lambda); only the constant-factor GLV arithmetic win
+
+done in 0.9s -> 04_out.json

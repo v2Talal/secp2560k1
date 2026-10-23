@@ -1,0 +1,27 @@
+=== 2560-bit curve (secp2560k1) ===
+N bits: 2560 | basis bits: 1280 1278 1278 1281
+det == +-N : True  sign: 1
+a1 + b1*lambda == 0 mod N : True
+a2 + b2*lambda == 0 mod N : True
+k bits : 2558  (full-size 2560-bit scalar)
+
+--- published listing, verbatim, on a real 2560-bit scalar ---
+OverflowError: integer division result too large for a float
+why: b2*k ~ 2^3838 ; det ~ 2^2560 ; quotient ~ 2^1278
+     Python float max ~ 2^1024  =>  int/int must become float  =>  OverflowError
+
+--- exact integer version (no floats) ---
+k1 bits : 1278   k2 bits: 1277
+k1 + k2*lambda == k (mod N) : True
+paper's claimed decomp_bits [1279,1277] vs ours: [1278, 1277]
+
+--- same listing at 256-bit scale (secp256k1 numbers) ---
+256-bit basis det == +-N : False
+256-bit: NO exception (float max 2^1024 >> 2^256) -> it silently 'works'
+256-bit: float result satisfies k1+k2*lambda == k (mod N) ? True
+256-bit: EXACT integer result satisfies the congruence ? True
+256-bit: float coefficients == exact coefficients ? True
+   float c1 = 0 | exact c1 = 0 | float mantissa = 53 bits
+   float k1 bits: 251 | exact k1 bits: 251
+
+DONE

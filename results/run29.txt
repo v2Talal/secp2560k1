@@ -1,0 +1,41 @@
+p bits 2560  n bits 2560
+cornacchia x bits 1279  y bits 1280
+j=0 b=7 form=trace=+(x+3y) gcd(A,B)=1 (bits 1) small={}
+j=1 b=21 form=trace=+2x gcd(A,B)=1 (bits 1) small={}
+j=2 b=63 form=trace=+(x-3y) gcd(A,B)=1 (bits 1) small={}
+j=3 b=189 form=trace=-(x+3y) gcd(A,B)=1 (bits 1) small={}
+j=4 b=567 form=trace=-2x gcd(A,B)=1 (bits 1) small={}
+j=5 b=1701 form=trace=-(x-3y) gcd(A,B)=3 (bits 2) small={}
+sieving primes to 2e6 ...
+primes(3..2e6) = 148932
+v3(nt) = 1  remainder bits = 2559
+small factors of twist cofactor below 2e6: {}
+small factors of nt below 2e6: {3: 1}
+j=0 b=7 sieve<=2e6: {}
+j=1 b=21 sieve<=2e6: {'3': 1, '109': 1}
+j=2 b=63 sieve<=2e6: {'7': 2}
+j=3 b=189 sieve<=2e6: {'3': 1}
+j=4 b=567 sieve<=2e6: {'7': 1, '13': 1, '19': 1, '223': 1, '274693': 1}
+j=5 b=1701 sieve<=2e6: {'3': 3, '73': 1}
+P(no factor<=2e6, any odd prime) = 0.07739262810374478
+P(no factor<=2e6, q=1 mod 3)      = 0.3684435153525319
+P(no factor<=2e6, q=2 mod 3)      = 0.21005289787688614
+counts q=1mod3: 74412  q=2mod3: 74520
+j=0 b=7 trace=+(x+3y) | 3|N=False 3|A=False | 2|N=False A=B(2)=False | gcd=1
+j=1 b=21 trace=+2x | 3|N=True 3|A=True | 2|N=True A=B(2)=True | gcd=1
+j=2 b=63 trace=+(x-3y) | 3|N=False 3|A=False | 2|N=False A=B(2)=False | gcd=1
+j=3 b=189 trace=-(x+3y) | 3|N=True 3|A=True | 2|N=False A=B(2)=False | gcd=1
+j=4 b=567 trace=-2x | 3|N=False 3|A=False | 2|N=True A=B(2)=True | gcd=1
+j=5 b=1701 trace=-(x-3y) | 3|N=True 3|A=True | 2|N=False A=B(2)=False | gcd=3
+sieving primes to 2e7 ...
+primes(3..2e7) = 1270606
+twist cofactor, factors <= 2e7: {}
+j=0 sieve<=2e7: {}
+j=1 sieve<=2e7: {'3': 1, '109': 1}
+j=2 sieve<=2e7: {'7': 2}
+j=3 sieve<=2e7: {'3': 1}
+j=4 sieve<=2e7: {'7': 1, '13': 1, '19': 1, '223': 1, '274693': 1}
+j=5 sieve<=2e7: {'3': 3, '73': 1}
+P(no factor<=2e7, any odd prime) = 0.06679476280740126
+P(no factor<=2e7, q=1 mod 3)      = 0.34229484611602895
+wrote paper_smallfac.json
