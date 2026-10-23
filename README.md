@@ -8,6 +8,7 @@ Status: preprint / technical report. Date: October 2026. License: CC BY 4.0.
 
 [![License](https://img.shields.io/badge/license-CC%20BY%204.0-lightgrey.svg)](LICENSE)
 [![Pages](https://img.shields.io/badge/paper-63%20pages-informational.svg)](paper/secp2560k1.pdf)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23601899.svg)](https://doi.org/10.5281/zenodo.23601899)
 
 > **Scope.** This repository certifies a *curve*. It certifies no protocol, no signature
 > scheme, no key-agreement protocol and no implementation. Everything stated here is a
